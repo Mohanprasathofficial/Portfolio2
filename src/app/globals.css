@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Sora', serif;
+}
+
+.swiper-scrollbar {
+  background: #ffffff !important;
+}
+
+.font-sora {
+  font-family: 'Sora', serif;
+}
+
+.bgheader {
+  background: rgb(195,161,107);
+background: linear-gradient(266deg, rgba(195,161,107,1) 7%, rgba(201,173,131,1) 46%, rgba(219,195,161,1) 64%, rgba(252,233,203,1) 85%);
+}
+
+.bgbackground {
+  background: rgb(19,26,49);
+background: linear-gradient(0deg, rgba(19,26,49,1) 24%, rgba(26,40,67,1) 55%);
+}
+
+.text-yellow{
+  color:#d1a45b;
+}
+
+.text-grey-200 {
+  color: #404042;
+}
+
+.text-grey{
+  color:#9e97a8;
+}
+
+.text-blue{
+  color:#1B4BF0;
+}
+
+.text-darkblue{
+  color:#15042e;
+}
+
+.bgyellow{
+  background-color: #d1a45b;
+}
+
+/* .bg1{
+  background-color: #15042e;
+} */
+
+.bg1{
+  background-color: #000423;
+}
+
+.bg2{
+  background-color: #25163d;
+}
+
+.bg3{
+  background-color: #1b4bf0;
+}
+
+.bg4{
+  background-color: #6fe4fc;
+}
+
+.bg5{
+  background-color: #030e4b;
+}
+
+.text-skyblue{
+  color:#6fe4fc;
+}
+
+.accordian2{
+  background-color: #211139;
+}
+
+.accordian3{
+  background-color: #2d1e43;
+}
+
+.accordian4{
+  background-color: #38294d;
+}
+
+.accordian5{
+  background-color: #443658;
+}
+
+.accordian6{
+  background-color: #f3f2f4;
+}
+
+.accordian7{
+  background-color: #e7e5ea;
+}
+
+
+.accordian8{
+  background-color: #dcdae0;
+}
+
+.accordian9{
+  background-color: #d0cdd5;
+}
+
+.bordertop{
+  border-top:1px solid #32204e;
+}
+
+.borderleft{
+  border-left:1px solid #32204e;
+}
+
+
+.hover-container {
+  position: relative;
+  z-index: 0;
+}
+
+.hover:hover{
+  background-color:#d1a45b;
+}
+
+
+.hover-bg {
+  
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Button revealed on hover */
+.hover-btn {
+  position: absolute;
+  z-index: 1;
+  bottom: -20px;
+  transform-origin: center;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none; 
+}
+
+
+.hover-container:hover .hover-btn {
+  pointer-events: auto;
+  
+  
+}
+
+.hover-container:hover {
+  pointer-events: auto;
+  background-color: #000; 
+  
+}
+
+.borderr{
+  border-top: 1px solid rgba(37, 40, 45, 0.16);
+}
+
+.border-yellow{
+  border-color: #d1a45b !important; 
+}
+
+.text{
+  color: #25282d;
+}
+ 
+/* Add this CSS to your global styles or module CSS file */
+.custom-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+.hover-text {
+  font-size: 120px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #1b4bf0; /* Blue outline */
+  background-image: linear-gradient(to right, #1b4bf0, #1b4bf0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+  transition: background-size 0.5s ease-in-out;
+  background-size: 0 100%; /* Initially no background inside */
+}
+
+.hover-text:hover {
+  background-size: 100% 100%; /* Fills the inside on hover */
+  color: transparent; /* Ensures the background shows inside the text */
+}
+
+.bggg {
+  background: #ededed3d
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+
