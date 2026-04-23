@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import IndexNavbar from "@/navbar/IndexNavbar";
 import IndexNavbar2 from "@/navbar/IndexNavbar2";
 import Grouppic from "../grouppic/page";
+import Image from "next/image";
+
 
 export default function SchoolBanner() {
   return (
@@ -26,7 +28,7 @@ export default function SchoolBanner() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black z-20" />
           
-          <img 
+          <Image
             src="/portf/NHSS.jpeg" 
             alt="NHSS"
             className="w-full h-full object-cover filter blur-[2px] grayscale-[30%] brightness-[50%]"

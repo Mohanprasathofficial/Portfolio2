@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 const logos = [
   { name: "Next.js", src: "/portf/next.png" },
@@ -39,7 +40,7 @@ export default function LogoSlider() {
                 {/* Background Glow */}
                 <div className="absolute inset-0 bg-[#b684ff] opacity-0 group-hover/logo:opacity-5 blur-2xl transition-opacity duration-500 rounded-full" />
                 
-                <img
+                <Image
                   src={logo.src}
                   alt={logo.name}
                   className="max-w-full max-h-full object-contain grayscale group-hover/logo:grayscale-0 transition-all duration-500 transform group-hover/logo:scale-110"

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function IndexNavbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -36,7 +37,7 @@ export default function IndexNavbar() {
           }`}
         >
           {/* LOGO */}
-          <a href="/homepage">
+          <Link href="/homepage">
             <Image
               src="/portf/logo.png"
               alt="logo"
@@ -44,19 +45,19 @@ export default function IndexNavbar() {
               height={120}
               className="object-contain"
             />
-          </a>
+          </Link>
 
           {/* MENU */}
           <div className="flex gap-6 md:gap-10 items-center text-sm md:text-base relative">
-            <a href="/about" className={linkStyle}>
+            <Link href="/about" className={linkStyle}>
               ABOUT
               <span className="underline-anim"></span>
-            </a>
+            </Link>
 
-            <a href="/software" className={linkStyle}>
+            <Link href="/software" className={linkStyle}>
               SOFTWARE
               <span className="underline-anim"></span>
-            </a>
+            </Link>
 
             {/* HOVER-TO-OPEN EDUCATION DROPDOWN */}
             <div
@@ -96,7 +97,7 @@ export default function IndexNavbar() {
                 <div className="mt-2 bg-[#F5F5F5]/90 backdrop-blur-md shadow-2xl rounded-2xl overflow-hidden p-2">
                   
                   {/* Dropdown Items */}
-                  <a
+                  <Link
                     href="/primary"
                     className="group/item flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:bg-gray/100 hover:shadow-sm border border-transparent hover:border-gray-200"
                   >
@@ -120,9 +121,9 @@ export default function IndexNavbar() {
                       </h4>
                       <p className="text-sm text-gray-300">Foundation learning programs</p>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="/college"
                     className="group/item flex items-center gap-4 p-4 mt-1 rounded-xl transition-all duration-300 hover:bg-white/80 hover:shadow-sm border border-transparent hover:border-gray-200"
                   >
@@ -146,23 +147,23 @@ export default function IndexNavbar() {
                       </h4>
                       <p className="text-sm text-gray-300">Advanced skill development</p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
 
-            <a href="/infrastructure" className={linkStyle}>
+            <Link href="/infrastructure" className={linkStyle}>
               INFRASTRUCTURE
               <span className="underline-anim"></span>
-            </a>
+            </Link>
 
-            <a href="/" className={linkStyle}>
+            <Link href="/" className={linkStyle}>
               CONTACT
               <span className="underline-anim"></span>
-            </a>
+            </Link>
 
             {/* BUTTON */}
-            <a href="tel:+971505696439">
+            <Link href="tel:+971505696439">
               <button
                 className={`border px-6 py-2 text-sm font-medium tracking-wider transition-all duration-300 ${
                   scrolled
@@ -172,7 +173,7 @@ export default function IndexNavbar() {
               >
                 ENQUIRE
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

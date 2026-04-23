@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboveFooter() {
   const contactMethods = [
@@ -75,7 +76,7 @@ export default function AboveFooter() {
                     className="flex flex-col items-center justify-center p-5 rounded-2xl border border-white/5 bg-white/5 transition-all group"
                   >
                     <div className="w-10 h-10 mb-3 flex items-center justify-center">
-                      <img 
+                      <Image
                         src={item.icon} 
                         alt={item.name} 
                         className="w-full h-full object-contain opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" 
@@ -96,7 +97,7 @@ export default function AboveFooter() {
                 className="flex items-center justify-center gap-3 w-full py-5 rounded-2xl text-white font-black shadow-xl transition-all"
                 style={{ backgroundColor: "#b684ff" }}
               >
-                <img 
+                <Image
                   src="/portf/zap.png" 
                   alt="Zap" 
                   className="w-5 h-5 object-contain" 

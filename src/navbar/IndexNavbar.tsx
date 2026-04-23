@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function IndexNavbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -48,15 +49,15 @@ export default function IndexNavbar() {
 
           {/* MENU */}
           <div className="flex gap-6 md:gap-10 items-center text-sm md:text-base relative">
-            <a href="/" className={linkStyle}>
+            <Link href="/" className={linkStyle}>
               ABOUT
               <span className="underline-anim"></span>
-            </a>
+            </Link>
 
-            <a href="/" className={linkStyle}>
+            <Link href="/" className={linkStyle}>
               SOFTWARE
               <span className="underline-anim"></span>
-            </a>
+            </Link>
 
             {/* HOVER-TO-OPEN EDUCATION DROPDOWN */}
             <div
@@ -151,18 +152,18 @@ export default function IndexNavbar() {
               </div>
             </div>
 
-            <a href="/" className={linkStyle}>
+            <Link href="/" className={linkStyle}>
               INFRASTRUCTURE
               <span className="underline-anim"></span>
-            </a>
+            </Link>
 
-            <a href="/" className={linkStyle}>
+            <Link href="/" className={linkStyle}>
               CONTACT
               <span className="underline-anim"></span>
-            </a>
+            </Link>
 
             {/* BUTTON */}
-            <a href="/">
+            <Link href="/">
               <button
                 className={`border px-6 py-2 text-sm font-medium tracking-wider transition-all duration-300 ${
                   scrolled
@@ -172,7 +173,7 @@ export default function IndexNavbar() {
               >
                 ENQUIRE
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

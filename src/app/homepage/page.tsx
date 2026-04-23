@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
 import Footer from "../footer";
 import Slider from "../Slider1/page";
 import Imageslide from "../imageslide/page";

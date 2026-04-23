@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function SimpleImageSection() {
   return (
@@ -16,7 +16,7 @@ export default function SimpleImageSection() {
 
       {/* THE IMAGE CONTAINER */}
       <div className="relative w-full max-w-7xl aspect-video rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
-        <img 
+        <Image
           src="/portf/grouppic.jpeg" 
           alt="EGS Pillay Engineering College"
           className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
@@ -33,7 +33,7 @@ export default function SimpleImageSection() {
       
       {/* Optional Caption */}
       <p className="mt-6 text-gray-500 text-xs font-light italic max-w-lg text-center">
-        "A premier institution committed to providing quality technical education and fostering innovation."
+        A premier institution committed to providing quality technical education and fostering innovation.
       </p>
     </section>
   );

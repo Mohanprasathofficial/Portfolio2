@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 export default function HeroSection() {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -92,14 +93,14 @@ export default function HeroSection() {
               <div className="relative drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)]">
 
                 {/* BACKGROUND IMAGE */}
-                <img
+                <Image
                   src="/portf/mybackimg.png"  // <-- change this to your image
                   alt="mybackimg"
                   className="absolute bottom-0 right-8 mb-24 xl:h-[520px] object-contain z-0 opacity-100  scale-110"
                 />
 
                 {/* MAIN IMAGE */}
-                <img
+               <Image
                   src="/portf/mohandanner.png"
                   alt="Mohan Danner"
                   className="relative xl:h-[650px] object-contain z-10"

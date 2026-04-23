@@ -106,7 +106,7 @@ export default function WhoIAm() {
 
             {/* Interactive Skills Chips */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-3">
-              {["Full Stack", "Creative Dev", "Software Architecture"].map((skill, index) => (
+              {["Full Stack", "Creative Dev", "Software Architecture"].map((skill) => (
                 <motion.span
                   key={skill}
                   whileHover={{ y: -5, backgroundColor: "#b684ff", color: "#fff" }}

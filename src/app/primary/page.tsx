@@ -5,6 +5,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import IndexNavbar from "@/navbar/IndexNavbar";
 import IndexNavbar2 from "@/navbar/IndexNavbar2";
 import Footer from "../footer";
+import Image from "next/image";
 
 export default function SchoolPortfolio() {
   const containerRef = useRef(null);
@@ -66,7 +67,7 @@ export default function SchoolPortfolio() {
         </nav>
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black z-20" />
-          <img 
+          <Image
             src="/portf/NHSS.jpeg" 
             className="w-full h-full object-cover filter blur-[2px] grayscale-[30%] brightness-[50%]" 
             alt="NHSS"
@@ -113,7 +114,7 @@ export default function SchoolPortfolio() {
                     >
                       <div className="bg-[#111] border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-[#b684ff]/40 transition-all duration-500 shadow-2xl">
                         <div className="h-48 overflow-hidden">
-                          <img src={item.img} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="school" />
+                          <Image src={item.img} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="school" />
                         </div>
                         <div className="p-8">
                           <div className="text-[#b684ff] text-[10px] font-bold tracking-widest uppercase mb-2">{item.period}</div>
