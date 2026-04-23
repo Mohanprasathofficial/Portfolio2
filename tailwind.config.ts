@@ -12,7 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      
+
+      // ✅ ADD THIS (important for fonts)
+      fontFamily: {
+        sora: ["var(--font-sora)"],
+        figtree: ["var(--font-figtree)"],
+        quicksand: ["var(--font-quicksand)"],
+      },
     },
   },
   plugins: [],
